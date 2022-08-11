@@ -35,7 +35,7 @@ public final class TwitchMinecraftPlugin extends JavaPlugin {
             .build();
 
         // Join the twitch chats of these channels and enable stream/follow events
-        List<String> channels = config.getStringList("channels");
+        /*~~>*/List<String> channels = config.getStringList("channels");
         if (!channels.isEmpty()) {
             channels.forEach(name -> client.getChat().joinChannel(name));
             client.getClientHelper().enableStreamEventListener(channels);
